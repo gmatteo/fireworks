@@ -834,7 +834,7 @@ def lpad():
     fw_report_parser = report_subparser.add_parser('fws', help='Get a report for fireworks', parents=[report_parent_parser])
     fw_report_parser.add_argument('-f', '--time_field', default="time_end")
     fw_report_parser.set_defaults(func=report)
-    launch_report_parser = report_subparser.add_parser('launches', help='Get a report for luanches', parents=[report_parent_parser])
+    launch_report_parser = report_subparser.add_parser('launches', help='Get a report for launches', parents=[report_parent_parser])
     launch_report_parser.add_argument('-f', '--time_field', default="time_end")
     launch_report_parser.add_argument('-r', '--runtime_stats', action="store_true")
     launch_report_parser.add_argument('-i', '--include_ids', action="store_true")
